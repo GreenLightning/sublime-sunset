@@ -9,6 +9,7 @@
 		{
 			// Fixes https://github.com/sublimehq/sublime_text/issues/4203
 			"class": "title_bar",
+			"settings": ["!themed_title_bar"],
 			"attributes": ["file_light"],
 			"fg": "",
 		},
