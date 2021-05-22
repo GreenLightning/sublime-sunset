@@ -1,0 +1,130 @@
+{
+	"name": "Sunset",
+	"author": "Green Lightning",
+	"variables":
+	{
+		"plain-text": "black",
+		"highlight-color": "#008cff",
+		"markup-background": "#00000010",
+
+		"soft-red":   "#aa0000",
+		"soft-green": "#00aa00",
+		"soft-blue":  "#0000aa",
+
+		"dark-green": "#008800",
+		"congress-blue": "#004080",
+	},
+	"globals":
+	{
+		"background": "white",
+		"foreground": "var(plain-text)",
+		"caret": "var(plain-text)",
+
+		"line_highlight": "color(var(highlight-color) alpha(0.2))",
+		"find_highlight": "color(var(highlight-color) alpha(0.5))",
+
+		"selection": "#cce8ff",
+		"selection_border": "#99d1ff",
+		"inactive_selection": "#e4e4e4",
+
+		"line_diff_added": "#008000a0",
+		"line_diff_modified": "#ff8000a0",
+		"line_diff_deleted": "#ff0000a0",
+
+		"accent": "#90c8f6",
+		"misspelling": "red",
+
+		"shadow": "#808080",
+		"shadow_width": "8",
+	},
+	"rules":
+	[
+		{
+			"scope": "comment",
+			"foreground": "red"
+		},
+		{
+			"scope": "constant",
+			"foreground": "var(soft-red)",
+			"font_style": "bold"
+		},
+		{
+			"scope": "string | punctuation.definition.string",
+			"foreground": "var(soft-blue)"
+		},
+		{
+			"scope": "entity",
+			"foreground": "var(dark-green)"
+		},
+		{
+			"scope": "keyword | keyword.operator.word",
+			"foreground": "#00aaff"
+		},
+		{
+			"scope": "keyword.operator",
+			"foreground": "var(plain-text)"
+		},
+		{
+			"scope": "source.regexp keyword | source.regexp keyword.operator | source.regexp keyword.operator.word",
+			"foreground": "#0088ff"
+		},
+		{
+			"scope": "storage | support.type",
+			"foreground": "#ff6400"
+		},
+		{
+			"scope": "support.function",
+			"foreground": "var(congress-blue)"
+		},
+		{
+			"scope": "markup.italic",
+			"font_style": "italic"
+		},
+		{
+			"scope": "markup.bold",
+			"font_style": "bold"
+		},
+		{
+			"scope": "markup.list",
+			"foreground": "var(soft-red)"
+		},
+		{
+			"scope": "markup.heading | markup.heading entity.name",
+			"foreground": "var(soft-blue)",
+			"font_style": "bold"
+		},
+		{
+			"scope": "punctuation.definition.heading.setext",
+			"foreground": "var(congress-blue)"
+		},
+		{
+			"scope": "markup.quote",
+			"foreground": "var(dark-green)",
+			"background": "var(markup-background)",
+			"font_style": "italic"
+		},
+		{
+			"scope": "markup.raw",
+			"foreground": "var(soft-blue)",
+			"background": "var(markup-background)"
+		},
+		{
+			"scope": "markup.raw.code-fence constant.other.language-name",
+			"foreground": "var(soft-blue)",
+			"font_style": "bold"
+		},
+		{
+			"scope": "meta.link | meta.image",
+			"foreground": "var(congress-blue)",
+			"font_style": "italic"
+		},
+		{
+			"scope": "markup.inserted",
+			"foreground": "var(soft-green)"
+		},
+		{
+			"scope": "markup.deleted",
+			"foreground": "red"
+		}
+	]
+}

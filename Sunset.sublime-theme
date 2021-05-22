@@ -1,0 +1,50 @@
+{
+	"extends": "Adaptive.sublime-theme",
+	"variables":
+	{
+		"font_size_sm": 12,
+	},
+	"rules":
+	[
+		{
+			// Fixes https://github.com/sublimehq/sublime_text/issues/4203
+			"class": "title_bar",
+			"attributes": ["file_light"],
+			"fg": "",
+		},
+		{
+			"class": "icon_folder",
+			"layer0.opacity": 0.4,
+		},
+		{
+			"class": "icon_folder_loading",
+			"layer0.opacity": 0.4,
+		},
+		{
+			"class": "icon_folder_dup",
+			"layer0.opacity": 0.4,
+		},
+		{
+			"class": "icon_file_type",
+			"layer0.opacity": 0.5,
+		},
+		{
+	        "class": "status_button",
+	        "layer0.texture": "Theme - Sunset/default/status_button.png",
+	        "layer0.inner_margin": [1, 0, 0, 0],
+	        "layer0.tint": ["background", 0, 0, 0, 0.3],
+	        "layer0.opacity": 1.0,
+	        "layer0.draw_center": false,
+	    },
+	    {
+	        "class": "status_button",
+	        "parents": [{"class": "window", "attributes": ["file_medium_dark"]}],
+	        "layer0.tint": ["background", 255, 255, 255, 0.3],
+	    },
+	    {
+	        "class": "status_button",
+	        "parents": [{"class": "window", "attributes": ["file_dark"]}],
+	        "layer0.tint": ["background", 255, 255, 255, 0.3],
+	    },
+	]
+}
