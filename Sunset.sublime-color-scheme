@@ -3,6 +3,7 @@
 	"author": "Green Lightning",
 	"variables":
 	{
+		"background": "white",
 		"plain-text": "black",
 		"highlight-color": "#008cff",
 		"markup-background": "#00000010",
@@ -16,9 +17,11 @@
 	},
 	"globals":
 	{
-		"background": "white",
+		"background": "var(background)",
 		"foreground": "var(plain-text)",
+
 		"caret": "var(plain-text)",
+		"accent": "color(var(highlight-color) blend(white 80%))",
 
 		"line_highlight": "color(var(highlight-color) alpha(0.2))",
 		"find_highlight": "color(var(highlight-color) alpha(0.5))",
@@ -26,12 +29,12 @@
 		"selection": "#cce8ff",
 		"selection_border": "#99d1ff",
 		"inactive_selection": "#e4e4e4",
+		"inactive_selection_border": "#d0d0d0",
 
 		"line_diff_added": "#008000a0",
 		"line_diff_modified": "#ff8000a0",
 		"line_diff_deleted": "#ff0000a0",
 
-		"accent": "#90c8f6",
 		"misspelling": "red",
 
 		"shadow": "#808080",
